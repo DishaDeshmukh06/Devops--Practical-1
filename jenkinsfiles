@@ -2,16 +2,15 @@ pipeline {
     agent any
 
     stages {
-
         stage('Clone') {
             steps {
-                echo 'Code Pulled'
+                echo 'Code Pulled Successfully'
             }
         }
 
         stage('Build Java') {
             steps {
-                bat 'javac App.java'
+                bat 'javac App.java' 
             }
         }
 
