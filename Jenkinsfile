@@ -1,9 +1,25 @@
-﻿pipeline {
+pipeline {
     agent any
     stages {
-        stage('Clone') { steps { echo 'Code Pulled' } }
-        stage('Build Java') { steps { echo 'Java Compiled' } }
-        stage('Run Java') { steps { echo 'App Running' } }
-        stage('Build Docker Image') { steps { echo 'Docker Image Ready' } }
+        stage('Clone') {
+            steps {
+                echo 'Code Pulled Successfully'
+            }
+        }
+        stage('Build Java') {
+            steps {
+                echo 'Java Compiled'
+            }
+        }
+        stage('Run Java') {
+            steps {
+                echo 'Application Running'
+            }
+        }
+        stage('Build Docker Image') {
+            steps {
+                echo 'Docker Image Built Successfully'
+            }
+        }
     }
 }
